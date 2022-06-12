@@ -34,6 +34,10 @@ h2 {
     text-align: center;
 }
 
+h2 {
+    font-size: 4.3rem;
+}
+
 a {
     text-decoration: none;
     color: var(--main-white)
@@ -112,27 +116,29 @@ ul {
 #projects {
     background-color: var(--main-blue);
     text-align: center;
+    padding: 10rem 2rem;
 }
 
 #projects h2 {
     text-align: center;
     max-width: 640px;
-    padding-top: 4rem;
+    /* padding-top: 4rem; */
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5rem;
-    border-bottom: 1px solid var(--main-white);
+    border-bottom: 0.2rem solid var(--main-white);
 }
 
 #projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 3rem;
     width: 100%;
     max-width: 1280px;
+    /* justify-items: center; */
     margin: 0 auto 6rem auto;
-    grid-gap: 3rem;
-    justify-items: center;
 }
+
 
 .project-tile {
     border-radius: 3px;
@@ -142,10 +148,10 @@ ul {
 
 .project-image {
     display: block;
-    height: calc(100% - 7rem);
-    /* height: 500px; */
     width: 100%;
     max-width: 50rem;
+    height: calc(100% - 6.8rem);
+    /* max-height: 300px; */
     object-fit: cover;
 }
 
@@ -185,5 +191,17 @@ ul {
     body {
         font-size: 1.4rem;
     }
+}
 
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background: var(--main-gray);
+    border-top: 4px solid var(--main-red);
+}
+
+footer>p {
+    margin: 2rem;
 }
