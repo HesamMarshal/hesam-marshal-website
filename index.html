@@ -4,11 +4,17 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Anton|Baskervville|Raleway&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+    <link rel="stylesheet" href="./css/card_style.css" type="text/css">
+
     <title>Portfolio' of Hesam</title>
 </head>
 
@@ -34,24 +40,98 @@
         <!-- start of project tile part -->
         <div id="projects-grid">
             <!-- Jahrom.ir card -->
-            <a href="http://jahrom.ir" target="_blank" class="project-tile">
-                <img src="./images/jahrom_ir_screenshot.png" alt="Jahrom.ir website screen shot"
-                    class="project project-image">
-                <p class="project-title">Jahrom municipality's Website</p>
-            </a>
+            <div class="card">
+                <ul class="ul">
+                    <li>
+                        <i class="bx bx-drink"></i>
+                    </li>
+                    <li>
+                        <i class="bx bx-film"></i>
+                    </li>
+                    <li>
+                        <i class="bx bx-store-alt"></i>
+                    </li>
+                    <li>
+                        <i class="bx bx-map"></i>
+                    </li>
+                </ul>
+                <img src="./images/jahrom_ir_screenshot.png" alt="">
+                <div class="con-text">
+                    <h2>Jahrom's Website</h2>
+                    <p>Jahrom's municipality Website. It has been implemneted with Wordpress.
+                        <a href="http://jahrom.ir" target="_blank">
+                            <button>
+                                See more
+                            </button>
+                        </a>
+                    </p>
+                </div>
+            </div>
 
-            <!-- Tim Berners-Lee card-->
-            <a href="./tribute/sir_tim_berners_lee.html" target="_blank" class="project project-tile">
+            <!-- Start of Tim Berners-Lee card -->
+            <div class="card">
+                <ul class="ul">
+                    <li>
+                        <i class="bx bx-drink"></i>
+                    </li>
+                    <li>
+                        <i class="bx bx-film"></i>
+                    </li>
+                    <li>
+                        <i class="bx bx-store-alt"></i>
+                    </li>
+                    <li>
+                        <i class="bx bx-map"></i>
+                    </li>
+                </ul>
                 <img src="./tribute/images/tim_tribute_screenshot.png"
-                    alt="Tribute Page to Sir Tim Berners-Lee screen shot" class="project-image">
-                <p class="project-title">Tribute to Sir Tim Berners-Lee</p>
-            </a>
+                    alt="Tribute Page to Sir Tim Berners-Lee screen shot">
+                <div class="con-text">
+                    <h2>Tribute</h2>
+                    <p>Tribute to Sir Tim Berners-Lee, <br> The inventor of web
 
-            <!-- City Vector card-->
-            <a href="./city_vector/city.html" target="_blank" class="project project-tile">
-                <img src="./city_vector/city_screenshot.png" alt="A Vector City" class="project-image">
-                <p class="project-title">A Vector City</p>
-            </a>
+                        <a href="./tribute/sir_tim_berners_lee.html" target="_blank">
+                            <button>
+                                See more
+                            </button>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <!-- End of Tim Berners-Lee card -->
+
+            <!-- Start of City Vector card-->
+            <div class="card">
+                <ul class="ul">
+                    <li>
+                        <i class="bx bx-drink"></i>
+                    </li>
+                    <li>
+                        <i class="bx bx-film"></i>
+                    </li>
+                    <li>
+                        <i class="bx bx-store-alt"></i>
+                    </li>
+                    <li>
+                        <i class="bx bx-map"></i>
+                    </li>
+                </ul>
+                <img src="./city_vector/city_screenshot.png" alt="A Vector City">
+                <div class="con-text">
+                    <h2>A Vector City</h2>
+                    <p>It shows night view when you use mobile, and it is day when you visit with PC.
+                        <a href="./city_vector/city.html" target="_blank">
+                            <button>
+                                See more
+                            </button>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <!-- End of City Vector card-->
+
+            <!-- add new projects here -->
+
         </div>
         <!-- End of project tile part -->
         <!-- <a href="#" target="_blank" class="btn btn-show-all">SHOW ALL</a> -->
