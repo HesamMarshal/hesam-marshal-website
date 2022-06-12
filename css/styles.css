@@ -47,22 +47,7 @@ ul {
     list-style: none;
 }
 
-.btn {
-    display: inline-block;
-    padding: 1rem 2rem;
-    border-radius: 2px;
-}
-
-.btn-show-all {
-    font-size: 2rem;
-    background: var(--main-gray);
-    transition: background 0.3s ease-out;
-}
-
-.btn-show-all:hover {
-    background: var(--main-red);
-}
-
+/* Navigation */
 #navbar {
     background-color: var(--navbar-red);
     display: flex;
@@ -78,7 +63,6 @@ ul {
     margin-right: 2rem;
 }
 
-
 .nav-list a {
     display: block;
     font-size: 2.2rem;
@@ -89,7 +73,7 @@ ul {
     background: var(--main-blue);
 }
 
-
+/* Welcome CSS */
 #welcome-section {
     width: 100%;
     height: 100vh;
@@ -113,6 +97,7 @@ ul {
     color: var(--main-red);
 }
 
+/* Projects */
 #projects {
     background-color: var(--main-blue);
     text-align: center;
@@ -187,12 +172,23 @@ ul {
     font-style: italic;
 }
 
-@media screen and(max-width: 640px) {
-    body {
-        font-size: 1.4rem;
-    }
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
 }
 
+.btn-show-all {
+    font-size: 2rem;
+    background: var(--main-gray);
+    transition: background 0.3s ease-out;
+}
+
+.btn-show-all:hover {
+    background: var(--main-red);
+}
+
+/* Footer CSS */
 footer {
     font-weight: 300;
     display: flex;
@@ -204,4 +200,10 @@ footer {
 
 footer>p {
     margin: 2rem;
+}
+
+@media screen and(max-width: 640px) {
+    body {
+        font-size: 1.4rem;
+    }
 }
