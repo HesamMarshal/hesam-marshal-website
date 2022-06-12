@@ -1,15 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hesam's Webdite</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Anton|Baskervville|Raleway&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Portfolio</title>
 </head>
 
 <body>
-    <h1>Testing git</h1>
+    <nav id="navbar">
+        <ul class="nav-list">
+            <li><a href="#welcome-section">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact_me">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="welcome-section">
+        <h1>Hey I am Hesam</h1>
+        <p>a fullstack developer</p>
+    </section>
+    <section id="projects">
+        <h2>There are some of my projects</h2>
+
+        <div id="projects-grid">
+            <a href="http://jahrom.ir" target="_blank" class="project-tile">
+                <img src="./images/jahrom_ir_scr.png" alt="Jahrom.ir website screen shot" class="project-image">
+                <p class="project-title">Tribute to Sir tim berners Lee</p>
+            </a>
+            <a href="./tribute/sir_tim_berners_lee.html" target="_blank" class="project-tile">
+                <img src="./tribute/images/tim_tribute_page.png" alt="Tribute Page to Sir Tim berners Lee screen shot"
+                    class="project-image">
+                <p class="project-title">Tribute to Sir tim berners Lee</p>
+            </a>
+
+
+        </div>
+        <a href="#" target="_blank" class="btn btn-show-all">SHOW ALL</a>
+    </section>
+
+
+    <section id="contact_me">
+        <div id="contact-header">
+            <h2>Let's work together...</h2>
+            <p>You can find me here :</p>
+        </div>
+        <div class="social-links">
+            <a href="https://github.com/HesamMarshal" target="_blank" class="btn details" id="profile-link"><i
+                    class="fab fa-github"></i>
+                GitHub</a>
+
+            <a href="https://github.com/HesamMarshal" target="_blank" class="btn details"><i
+                    class="fab fa-instagram"></i></i>
+                Instagram</a>
+
+            <a href="https://twitter.com/HesamMarshal" target="_blank" class="btn details"><i
+                    class="fab fa-twitter"></i>
+                Twitter</a>
+            <a href="mailto:akrami.hessam@gmail.com" target="_blank" class="btn details"><i class="fas fa-at"></i>
+                Send a mail</a>
+            <a href="tel:+989173918727" target="_blank" class="btn details"><i class="fas fa-mobile-alt"></i>
+                Call me</a>
+        </div>
+
+    </section>
+
 </body>
 
 </html>

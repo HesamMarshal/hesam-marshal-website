@@ -1,0 +1,55 @@
+main {
+    background-color: rgb(238, 238, 238);
+    color: #333;
+    border-radius: 5px;
+}
+
+#title {
+    text-align: center;
+    padding-top: 1px;
+    ;
+}
+
+#img-div {
+    background-color: #fff;
+}
+
+img {
+    display: block;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+#img-caption {
+    text-align: center;
+    /* margin: 10px; */
+    padding: 15px;
+}
+
+#tribute-info {
+    text-align: center;
+}
+
+#time-line {
+    /* display: block; */
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    /* text-align: center; */
+}
+
+li {
+    padding-bottom: 20px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+#link-desc {
+    text-align: center;
+    padding-bottom: 10px;
+
+}
