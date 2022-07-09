@@ -1,3 +1,5 @@
+// All browsers
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +8,7 @@
 }
 
 :root {
+    // Change the names 
     --color-primary: #191d2b;
     --color-secondary: #27AE60;
     --color-white: #FFFFFF;
@@ -34,7 +37,6 @@
     --color-grey-4: #454e56;
     --color-grey-5: #f8f8f8;
     --color-grey-6: #12181b;
-
 }
 
 body {
@@ -53,7 +55,7 @@ a {
 }
 
 header {
-    height: 100vh;
+    min-height: 100vh;
     color: var(--color-white);
     overflow: hidden;
 }
@@ -207,7 +209,7 @@ section {
 .header-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 100%;
+    min-height: 100vh;
 
     .left-header {
         display: flex;
@@ -770,9 +772,13 @@ section {
         .i-c-2 {
             display: flex;
 
-            #email {
+            :last-child {
                 margin-left: 1.5rem;
             }
+
+            // #email {
+            //     margin-left: 1.5rem;
+            // }
         }
 
         .submit-btn {
@@ -864,3 +870,5 @@ section {
         }
     }
 }
+
+@import './media';
