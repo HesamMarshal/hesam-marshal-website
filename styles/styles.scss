@@ -413,11 +413,47 @@ section {
                     }
 
                     .html {
-                        width: 80%;
+                        width: 95%;
                     }
 
                     .css {
-                        width: 75%;
+                        width: 85%;
+                    }
+
+                    .python {
+                        width: 95%;
+                    }
+
+                    .c-lang {
+                        width: 80%;
+                    }
+
+                    .c-sharp {
+                        width: 80%;
+                    }
+
+                    .sql {
+                        width: 80%;
+                    }
+
+                    .php {
+                        width: 40%;
+                    }
+
+                    .js {
+                        width: 85%;
+                    }
+
+                    .kotlin {
+                        width: 50%;
+                    }
+
+                    .java {
+                        width: 40%;
+                    }
+
+                    .type-script {
+                        width: 30%;
                     }
                 }
             }
@@ -623,16 +659,18 @@ section {
                 filter: grayscale(0);
                 transform: scale(1.1);
                 box-shadow: 0px 4px 15px rgba(0, 0, 0, .8);
+
             }
         }
 
         img {
             width: 100%;
-            height: 300px;
+            height: 250px;
             object-fit: cover;
             border-radius: 5px 5px 0 0;
             filter: grayscale(100%);
             transition: all .4s ease-in-out;
+            object-position: left;
 
         }
 
@@ -653,10 +691,24 @@ section {
                 }
             }
 
+            .date {
+                padding: .05rem .6rem;
+                background-color: var(--color-grey-4);
+                border-radius: 10px;
+                display: inline-block;
+                font-size: .8rem;
+                text-transform: uppercase;
+                font-weight: 500;
+            }
+
             p {
                 color: var(--color-grey-2);
                 line-height: 2rem;
                 padding-bottom: 1rem;
+
+                span {
+                    color: var(--color-secondary)
+                }
             }
         }
 
@@ -745,6 +797,7 @@ section {
     }
 
     .right-content {
+        display: none;
         flex: 3;
         margin-left: 3rem;
 
@@ -769,6 +822,10 @@ section {
 
         .i-c-2 {
             display: flex;
+
+            // :last-child {
+            //     margin-left: 1.5rem;
+            // }
 
             #email {
                 margin-left: 1.5rem;
