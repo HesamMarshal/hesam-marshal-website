@@ -7,6 +7,7 @@
     list-style: none;
 }
 
+// Color Section
 :root {
     // Change the names 
     --color-primary: #191d2b;
@@ -66,7 +67,7 @@ section {
     position: absolute;
     left: 0%;
     top: 0;
-    padding: 3rem 18rem;
+    padding: 3rem 18rem 3rem 18rem;
 }
 
 .section {
@@ -78,8 +79,6 @@ section {
 .sec1 {
     display: none;
     transform: translateY(0) scale(1);
-
-
 }
 
 .sec2 {
@@ -87,19 +86,16 @@ section {
     transform: translateY(0) scale(1);
     // TODO:  Use it for media query
     // padding: 3rem 15rem;
-
 }
 
 .sec3 {
     display: none;
     transform: translateY(0) scale(1);
-
 }
 
 .sec4 {
     display: none;
     transform: translateY(0) scale(1);
-
 }
 
 .sec5 {
@@ -115,15 +111,12 @@ section {
         0% {
             // transform: translateY(-100%) scale(0);
             transform: translateY(-100%) scaleY(0);
-
         }
 
         100% {
             // transform: translateY(0) scale(1);
             transform: translateY(0) scaleY(1);
-
         }
-
     }
 }
 
@@ -170,8 +163,7 @@ section {
     }
 }
 
-//  Theme Btn
-
+//  Theme Button
 .theme-btn {
     top: 5%;
     right: 3%;
@@ -196,13 +188,6 @@ section {
         color: var(--color-grey-2);
         pointer-events: none;
     }
-
-    // padding: 1rem;
-    // width: 55px;
-    // height: 55px;
-    // border-radius: 50%;
-    // margin: .7rem 0;
-
 }
 
 // Header Content
@@ -247,7 +232,6 @@ section {
                 &:hover {
                     filter: grayscale(0);
                 }
-
             }
         }
     }
@@ -261,7 +245,6 @@ section {
         .name {
             font-size: 5rem;
             font-family: Valencia;
-
             font-weight: 400;
 
             span {
@@ -276,20 +259,16 @@ section {
             font-style: italic;
             color: var(--main-red);
             color: var(--color-secondary);
-
         }
 
         p {
             margin: 1.5rem 0;
             line-height: 2rem;
-
         }
     }
-
 }
 
 // About Section
-
 .about-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -312,8 +291,6 @@ section {
             // transition: all .4s ease-in-out;
         }
     }
-
-
 
     .right-about {
         display: grid;
@@ -342,7 +319,6 @@ section {
                     font-size: 3rem;
                     font-weight: 700;
                     color: var(--color-secondary);
-
                 }
 
                 .small-text {
@@ -361,7 +337,6 @@ section {
                         width: 2rem;
                         height: 2px;
                         background-color: var(--color-grey-5);
-
                     }
                 }
             }
@@ -372,12 +347,10 @@ section {
 .about-stats {
     padding-bottom: 4rem;
 
-
     .progress-bars {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 2rem;
-
 
         .progress-bar {
             display: flex;
@@ -386,7 +359,6 @@ section {
             .progress-title {
                 text-transform: uppercase;
                 font-weight: 500;
-
             }
 
             .progress-container {
@@ -411,7 +383,6 @@ section {
                         height: 100%;
                         background-color: var(--color-secondary);
                         transition: all .4s ease-in-out;
-
                     }
 
                     .html {
@@ -469,7 +440,6 @@ section {
     text-align: center;
     padding: 3.5rem 0;
     position: relative;
-
 
     &::before {
         content: '';
@@ -535,7 +505,6 @@ section {
                 color: var(--color-grey-2);
                 font-weight: 500;
                 font-size: 1.2rem;
-
             }
         }
 
@@ -549,7 +518,6 @@ section {
 .portfolio-text {
     padding: 2rem 0;
     text-align: center;
-
 }
 
 .portfolios {
@@ -566,7 +534,6 @@ section {
             height: 300px;
             object-fit: cover;
             border-radius: 15px;
-
         }
 
         .hover-item {
@@ -589,7 +556,6 @@ section {
                 font-size: 1.5rem;
                 color: var(--color-white);
                 margin-bottom: 1.5rem;
-
             }
 
             .icons {
@@ -622,10 +588,7 @@ section {
                             color: var(--color-primary);
                         }
                     }
-
                 }
-
-
             }
         }
     }
@@ -634,7 +597,6 @@ section {
 .portfolio-item:hover .hover-item {
     opacity: 1;
     transform: scale(1);
-
 }
 
 // Blog Section
@@ -661,7 +623,11 @@ section {
                 filter: grayscale(0);
                 transform: scale(1.1);
                 box-shadow: 0px 4px 15px rgba(0, 0, 0, .8);
+                // object-position: center;
             }
+
+
+
         }
 
         .date {
@@ -682,7 +648,10 @@ section {
             border-radius: 5px 5px 0 0;
             filter: grayscale(100%);
             transition: all .4s ease-in-out;
+        }
 
+        .left-image {
+            object-position: left;
         }
 
         .blog-text {
@@ -698,7 +667,6 @@ section {
 
                 &:hover {
                     color: var(--color-secondary);
-
                 }
             }
 
@@ -708,7 +676,6 @@ section {
                 padding-bottom: 1rem;
             }
         }
-
     }
 }
 
@@ -724,7 +691,6 @@ section {
             margin-top: 1rem;
             font-size: 2rem;
             text-transform: uppercase;
-
         }
 
         p {
@@ -753,7 +719,6 @@ section {
                         font-size: 1.5rem;
                     }
                 }
-
             }
         }
 
@@ -790,10 +755,10 @@ section {
                 }
             }
         }
-
     }
 
     .right-content {
+        // display: none;
         flex: 3;
         margin-left: 3rem;
 
@@ -819,13 +784,9 @@ section {
         .i-c-2 {
             display: flex;
 
-            :last-child {
+            #email {
                 margin-left: 1.5rem;
             }
-
-            // #email {
-            //     margin-left: 1.5rem;
-            // }
         }
 
         .submit-btn {
@@ -873,7 +834,6 @@ section {
         transform: translateX(100%);
         transition: all .4s ease-out;
         z-index: -1;
-
     }
 
     &:hover {
@@ -885,7 +845,6 @@ section {
             background-color: var(--color-secondary);
             transform: translateX(0);
             transition: all .4s ease-out;
-
         }
     }
 }
@@ -901,7 +860,6 @@ section {
 
         span {
             color: var(--color-secondary);
-
         }
 
         .bg-text {
