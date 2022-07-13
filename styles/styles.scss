@@ -626,8 +626,6 @@ section {
                 // object-position: center;
             }
 
-
-
         }
 
         .date {
@@ -674,6 +672,10 @@ section {
                 color: var(--color-grey-2);
                 line-height: 2rem;
                 padding-bottom: 1rem;
+
+                span {
+                    color: var(--color-secondary);
+                }
             }
         }
     }
@@ -757,8 +759,9 @@ section {
         }
     }
 
+    //  Contact Form
     .right-content {
-        // display: none;
+        display: none;
         flex: 3;
         margin-left: 3rem;
 

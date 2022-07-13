@@ -595,6 +595,9 @@ section {
   line-height: 2rem;
   padding-bottom: 1rem;
 }
+.blogs .blog .blog-text p span {
+  color: var(--color-secondary);
+}
 
 .contact-content-container {
   display: flex;
@@ -660,6 +663,7 @@ section {
   font-size: 1.3rem;
 }
 .contact-content-container .right-content {
+  display: none;
   flex: 3;
   margin-left: 3rem;
 }
@@ -775,9 +779,6 @@ section {
   .contact-content-container .right-content {
     margin-left: 0;
     margin-top: 2.5rem;
-  }
-  .contact-content-container .right-content .i-c-2 {
-    flex-direction: column;
   }
   .contact-content-container .right-content .i-c-2 #email {
     margin-left: 0;
