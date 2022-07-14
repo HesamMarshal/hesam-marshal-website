@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Valencia';
+    src: url('../../fonts/valencia-webfont.woff2') format('woff2'),
+        url('../../fonts/valencia-webfont.woff') format('woff'),
+        url('../../fonts/Valencia.ttf') format(' ttf');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* @font-face {
+    font-family: Valencia;
+    src: url(../fonts/Valencia.ttf)
+} */
+
+/* @font-face {
+    font-family: "CustomFont";
+    src: url("CustomFont.eot");
+    src: url("CustomFont.woff") format("woff"),
+    url("CustomFont.otf") format("opentype"),
+    url("CustomFont.svg#filename") format("svg");
+    } */
