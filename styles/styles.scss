@@ -603,13 +603,13 @@ section {
 }
 
 // Blog Section
-.blogs {
+.certificates {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
     margin-top: 3rem;
 
-    .blog {
+    .certificate {
         position: relative;
         background-color: var(--color-grey-5);
         border-radius: 5px;
@@ -655,7 +655,7 @@ section {
             object-position: left;
         }
 
-        .blog-text {
+        .certificate-text {
             margin-top: -7px;
             padding: 1.1rem;
             border-top: 8px solid var(--color-secondary);
