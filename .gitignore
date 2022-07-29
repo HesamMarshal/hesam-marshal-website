@@ -6,3 +6,5 @@ cgi-bin/
 ideas/
 secrets/
 .vscode/
+styles/*.scss
+styles/styles.css.map
