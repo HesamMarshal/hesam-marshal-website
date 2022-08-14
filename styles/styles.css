@@ -8,6 +8,8 @@
 :root {
   --color-primary: #191d2b;
   --color-secondary: #27AE60;
+  --color-icon: #b2becd;
+  --color-active-icon: #FFFFFF;
   --color-white: #FFFFFF;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -24,7 +26,9 @@
 
 .light-mode {
   --color-primary: #ffffff;
-  --color-secondary: #f56692;
+  --color-secondary: #5BE9B9;
+  --color-icon: #f8f8f8;
+  --color-active-icon: #f8f8f89a;
   --color-white: #454e56;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -127,7 +131,7 @@ section {
   transition: all 0.4s ease-in-out;
 }
 .controls .active-btn i {
-  color: var(--color-white) !important;
+  color: var(--color-active-icon) !important;
 }
 .controls .control {
   padding: 1rem;
@@ -144,7 +148,7 @@ section {
 }
 .controls .control i {
   font-size: 1.2rem;
-  color: var(--color-grey-2);
+  color: var(--color-icon);
   pointer-events: none;
 }
 
@@ -708,6 +712,7 @@ section {
   padding: 0 2rem;
 }
 .main-btn .btn-icon {
+  color: var(--color-icon);
   background-color: var(--color-secondary);
   display: flex;
   align-items: center;
@@ -726,6 +731,7 @@ section {
 }
 .main-btn:hover {
   transition: all 0.4s ease-out;
+  color: var(--color-active-icon);
 }
 .main-btn:hover::before {
   width: 100%;
