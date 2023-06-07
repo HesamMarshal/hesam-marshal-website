@@ -103,8 +103,7 @@ section {
 
 .active {
   display: block;
-  -webkit-animation: scaleAnim 1s ease-in-out;
-          animation: scaleAnim 1s ease-in-out;
+  animation: scaleAnim 1s ease-in-out;
 }
 @keyframes scaleAnim {
   0% {
@@ -228,8 +227,7 @@ section {
   font-size: 5rem;
   font-family: Valencia;
   font-weight: 400;
-  -webkit-animation: scale-up-center 4s ease-in-out 0s 1 normal none;
-          animation: scale-up-center 4s ease-in-out 0s 1 normal none;
+  animation: scale-up-center 4s ease-in-out 0s 1 normal none;
 }
 .header-content .right-header .name span {
   color: var(--color-secondary);
@@ -562,7 +560,7 @@ section {
 }
 .certificates .certificate img {
   width: 100%;
-  height: 300px;
+  height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 5px 5px 0 0;
@@ -765,22 +763,6 @@ section {
   font-size: 6.2rem;
 }
 
-@-webkit-keyframes scale-up-center {
-  0% {
-    transform: scale(0.2);
-    transform: scale(0.2);
-    transform-origin: 0% 100%;
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    transform-origin: 0% 100%;
-    filter: blur(0);
-    opacity: 1;
-  }
-}
-
 @keyframes scale-up-center {
   0% {
     transform: scale(0.2);
@@ -796,14 +778,6 @@ section {
     opacity: 1;
   }
 }
-@-webkit-keyframes scaleAnim {
-  0% {
-    transform: translateY(-100%) scaleY(0);
-  }
-  100% {
-    transform: translateY(0) scaleY(1);
-  }
-}
 @keyframes scaleAnim {
   0% {
     transform: translateY(-100%) scaleY(0);
@@ -814,9 +788,9 @@ section {
 }
 @media screen and (max-width: 1432px) {
   .sec2,
-.sec3,
-.sec4,
-.sec5 {
+  .sec3,
+  .sec4,
+  .sec5 {
     padding: 7rem 11rem;
   }
   .contact-content-container {
