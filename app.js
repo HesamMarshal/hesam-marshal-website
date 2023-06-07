@@ -116,9 +116,9 @@ const certificates = [
   {
     certName:
       "Microsoft Certified Solution Developer : <span>Web Applications</span>",
-    imgSrc: "Kaggle-Python.png",
+    imgSrc: "MCSD.jpg",
     alt: "Microsoft Certified Solution Developer : Web Applications",
-    organization: "Kaggle",
+    organization: "Microsoft",
     certDate: " Jun 29, 2013",
   },
 
@@ -186,7 +186,9 @@ const addCertificates = () => {
     const certDiv = document.createElement("div");
     certDiv.classList.add("certificate");
     const newCert = `
-                <img src="./images/certificates/${cert.imgSrc}" alt="${cert.alt}">
+                <a href="./images/certificates/${cert.imgSrc}" target="_blank" >
+                  <img src="./images/certificates/${cert.imgSrc}" alt="${cert.alt}">
+                </a>
                 <div class="certificate-text">
                     <h4>${cert.organization}</h4>
                     <p class="date">${cert.certDate}</p>
