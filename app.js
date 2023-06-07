@@ -8,9 +8,30 @@ const certificatesDiv = document.querySelector("#certs");
 
 const certificates = [
   {
+    certName: "Advanced React",
+    imgSrc: "Advanced_React.jpg",
+    alt: "Advanced React Certificate by Hesamaddin Akrami",
+    organization: "Coursera",
+    certDate: "Jun 2, 2023",
+  },
+  {
+    certName: "React Basic",
+    imgSrc: "React_Basic.jpg",
+    alt: "React Basic Certificate by Hesam Akrami",
+    organization: "Coursera",
+    certDate: "May 14, 2023",
+  },
+  {
+    certName: "Principles of UX/UI Design",
+    imgSrc: "UI_UX.jpg",
+    alt: "Principles of UX/UI Design Certificate by Hesamaddin Akrami",
+    organization: "Coursera",
+    certDate: "Jan 17, 2023",
+  },
+  {
     certName: "HTML and CSS in depth",
     imgSrc: "HTML_CSS.jpg",
-    alt: "HTML & CSS Certificates",
+    alt: "HTML and CSS in depth Certificate",
     organization: "Coursera",
     certDate: "Dec 18, 2022",
   },
