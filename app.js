@@ -5,6 +5,7 @@ const sectBtns = document.querySelectorAll(".controls");
 const sectBtn = document.querySelectorAll(".control");
 const allSections = document.querySelector(".main-content");
 const certificatesDiv = document.querySelector("#certs");
+const aboutStatsDiv = document.querySelector("#about-stats");
 
 const certificates = [
   {
@@ -181,6 +182,84 @@ function PageTransitions() {
     console.log("toggle");
   });
 }
+
+const addAbout = () => {
+  const skills = [
+    {
+      title: "React.js",
+      progress: "85%",
+      className: "reactjs",
+    },
+    {
+      title: "JS & Node.js",
+      progress: "75%",
+      className: "js",
+    },
+    {
+      title: "HTML 5",
+      progress: "95%",
+      className: "html",
+    },
+    {
+      title: "CSS 3",
+      progress: "85%",
+      className: "css",
+    },
+    {
+      title: "SCSS",
+      progress: "75%",
+      className: "scss",
+    },
+    {
+      title: "TypeScript",
+      progress: "50%",
+      className: "type-script",
+    },
+    {
+      title: "Pyhton",
+      progress: "95%",
+      className: "python",
+    },
+    {
+      title: "C/C++",
+      progress: "80%",
+      className: "c-lang",
+    },
+    {
+      title: "C#",
+      progress: "80%",
+      className: "c-sharp",
+    },
+    {
+      title: "SQL",
+      progress: "80%",
+      className: "sql",
+    },
+    {
+      title: "PHP",
+      progress: "40%",
+      className: "php",
+    },
+  ];
+  console.log(skills);
+  skills.forEach((skill) => {
+    const skillDiv = document.createElement("div");
+    skillDiv.classList.add("progress-bar");
+    const newSkill = `
+            <p class="progress-title">${skill.title}</p>
+            <div class="progress-container">
+                <p class="progress-text">${skill.progress}</p>
+                <div class="progress">
+                  <span class=${skill.className}></span>
+                </div>
+            </div>
+              `;
+    skillDiv.innerHTML = newSkill;
+
+    aboutStatsDiv.append(skillDiv);
+  });
+};
+
 const addCertificates = () => {
   certificates.forEach((cert) => {
     const certDiv = document.createElement("div");
@@ -203,3 +282,4 @@ const addCertificates = () => {
 
 PageTransitions();
 addCertificates();
+addAbout();
