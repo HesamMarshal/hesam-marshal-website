@@ -9,6 +9,13 @@ const aboutStatsDiv = document.querySelector("#about-stats");
 
 const certificates = [
   {
+    certName: "Front-End Developer Capstone",
+    imgSrc: "front_end_developer_capstone.jpg",
+    alt: "Front-End Developer Capstone Certificate by Hesamaddin Akrami",
+    organization: "Coursera",
+    certDate: "Jun 19, 2023",
+  },
+  {
     certName: "Advanced React",
     imgSrc: "Advanced_React.jpg",
     alt: "Advanced React Certificate by Hesamaddin Akrami",
