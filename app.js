@@ -9,6 +9,20 @@ const aboutStatsDiv = document.querySelector("#about-stats");
 
 const certificates = [
   {
+    certName: "Meta Front-End Developer",
+    imgSrc: "Coursera_Meta_Front_End_Developer.jpg",
+    alt: "Meta Front-End Developer Certificate by Hesamaddin Akrami",
+    organization: "Coursera",
+    certDate: "Jul 2, 2023",
+  },
+  {
+    certName: "Coding Interview Preparation",
+    imgSrc: "Coursera_Coding_Interview_Preparation.jpg",
+    alt: "Front-End Developer Capstone Certificate by Hesamaddin Akrami",
+    organization: "Coursera",
+    certDate: "Jul 2, 2023",
+  },
+  {
     certName: "Front-End Developer Capstone",
     imgSrc: "front_end_developer_capstone.jpg",
     alt: "Front-End Developer Capstone Certificate by Hesamaddin Akrami",
