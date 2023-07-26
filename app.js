@@ -9,6 +9,13 @@ const aboutStatsDiv = document.querySelector("#about-stats");
 
 const certificates = [
   {
+    certName: "Introduction to Agile Development and Scrum",
+    imgSrc: "Coursera_Introduction_to_Agile_Development_and_Scrum.jpg",
+    alt: "IBM Introduction to Agile Development and Scrum by Hesamaddin Akrami",
+    organization: "Coursera",
+    certDate: "Jul 25, 2023",
+  },
+  {
     certName: "Meta Front-End Developer",
     imgSrc: "Coursera_Meta_Front_End_Developer.jpg",
     alt: "Meta Front-End Developer Certificate by Hesamaddin Akrami",
