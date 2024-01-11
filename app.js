@@ -6,6 +6,7 @@ const sectBtn = document.querySelectorAll(".control");
 const allSections = document.querySelector(".main-content");
 const certificatesDiv = document.querySelector("#certs");
 const aboutStatsDiv = document.querySelector("#about-stats");
+const portfolioSection = document.querySelector("#portfolio-items");
 
 const certificates = [
   {
@@ -269,7 +270,6 @@ const addAbout = () => {
       className: "php",
     },
   ];
-  console.log(skills);
   skills.forEach((skill) => {
     const skillDiv = document.createElement("div");
     skillDiv.classList.add("progress-bar");
@@ -308,6 +308,86 @@ const addCertificates = () => {
   });
 };
 
+const addPortfolio = () => {
+  const portfolios = [
+    {
+      portfolioName: "WhatToWatch.ir",
+      imgSrc: "whattowatch01_800.jpg",
+      alt: "WhatToWatch.ir screenshot",
+      link: "https://WhatToWatch.ir/old",
+      githubLink: "https://github.com/HesamMarshal/whattowatch",
+    },
+    {
+      portfolioName: "Jahrom.ir (Persian)",
+      imgSrc: "jahrom_ir_screenshot_800.jpg",
+      alt: "Jahrom.ir screenshot",
+      link: "http://jahrom.ir",
+      githubLink: "",
+    },
+    {
+      portfolioName: "Chaptera.ir (Persian)",
+      imgSrc: "chaptera_screenshot.jpg",
+      alt: "Chaptera website Screenshot",
+      link: "https://chaptera.ir",
+      githubLink: "",
+    },
+    {
+      portfolioName: "Tapsi Demo",
+      imgSrc: "tapsi_demo_screenshot.jpg",
+      alt: "Tapsi Demo Screenshot",
+      link: "https://hesammarshal.github.io/tapsiDemo/",
+      githubLink: "https://github.com/HesamMarshal/tapsiDemo",
+    },
+    {
+      portfolioName: "My Older Website",
+      imgSrc: "old_website.png",
+      alt: "Hesam Marshal Old Website",
+      link: "./old_website/index.html",
+      githubLink: "",
+    },
+    {
+      portfolioName: "Hesam Akrami (Persian)",
+      imgSrc: "hesamakrami_screenshot.jpg",
+      alt: "Hesam Akrami Persian Website",
+      link: "https://HesamAkrami.ir",
+      githubLink: "",
+    },
+    {
+      portfolioName: "",
+      imgSrc: "virtual_keyboard.jpg",
+      alt: "Virtual Keyboard Python Project",
+      link: "",
+      githubLink: "https://github.com/HesamMarshal/virtual_keyboard",
+    },
+  ];
+  portfolios.forEach((portfolio) => {
+    const portDiv = document.createElement("div");
+    portDiv.classList.add("portfolio-item");
+    const newPort = `
+                <div class="portfolio-item">
+                    <div class="image">
+                    <img src="./images/portfolios/${portfolio.imgSrc}" alt="${portfolio.alt}">
+                        <div class="hover-item">
+                        <h3>${portfolio.portfolioName}</h3>
+                            <div class="icons">
+                                <a href="${portfolio.link}" target="_balnk" class="icon">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                                <a href="${portfolio.githubLink}" target="_balnk" class="icon">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              `;
+    portDiv.innerHTML = newPort;
+
+    portfolioSection.append(portDiv);
+  });
+};
+
 PageTransitions();
 addCertificates();
 addAbout();
+addPortfolio();
