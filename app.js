@@ -353,7 +353,7 @@ const addPortfolio = () => {
       githubLink: "",
     },
     {
-      portfolioName: "Hesam Akrami (Persian)",
+      portfolioName: "Hesam Akrami (Fa)",
       imgSrc: "hesamakrami_screenshot.jpg",
       alt: "Hesam Akrami Persian Website",
       link: "https://HesamAkrami.ir",
@@ -373,16 +373,27 @@ const addPortfolio = () => {
     const newPort = `
                 <div class="portfolio-item">
                     <div class="image">
-                    <img src="./images/portfolios/${portfolio.imgSrc}" alt="${portfolio.alt}">
+                    <img src="./images/portfolios/${portfolio.imgSrc}" alt="${
+      portfolio.alt
+    }">
                         <div class="hover-item">
                         <h3>${portfolio.portfolioName}</h3>
                             <div class="icons">
-                                <a href="${portfolio.link}" target="_balnk" class="icon">
-                                    <i class="fas fa-link"></i>
-                                </a>
-                                <a href="${portfolio.githubLink}" target="_balnk" class="icon">
-                                    <i class="fab fa-github"></i>
-                                </a>
+                              ${
+                                portfolio.link
+                                  ? "<a href=" +
+                                    portfolio.link +
+                                    " target='_balnk' class='icon'><i class='fas fa-link'></i></a>"
+                                  : ""
+                              }                           
+                              ${
+                                portfolio.githubLink
+                                  ? "<a href=" +
+                                    portfolio.githubLink +
+                                    " target='_balnk' class='icon'><i class='fab fa-github'></i></a>"
+                                  : ""
+                              }
+                               
                             </div>
                         </div>
                     </div>
