@@ -312,6 +312,13 @@ const addPortfolio = () => {
   const portfolios = [
     {
       portfolioName: "WhatToWatch.ir",
+      imgSrc: "whattowatchnew_800.jpg",
+      alt: "WhatToWatch.ir screenshot",
+      link: "https://WhatToWatch.ir/old",
+      githubLink: "",
+    },
+    {
+      portfolioName: "WhatToWatch (Old)",
       imgSrc: "whattowatch01_800.jpg",
       alt: "WhatToWatch.ir screenshot",
       link: "https://WhatToWatch.ir/old",
