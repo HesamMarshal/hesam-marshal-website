@@ -353,7 +353,7 @@ const addPortfolio = () => {
       githubLink: "",
     },
     {
-      portfolioName: "",
+      portfolioName: "Virtual Keyboard",
       imgSrc: "virtual_keyboard.jpg",
       alt: "Virtual Keyboard Python Project",
       link: "",
